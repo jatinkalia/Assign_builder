@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.toolbar {
+  width: 200px;
+  background-color: #222; /* Dark toolbar */
+  padding: 10px;
+  border-right: 1px solid #444;
+  color: white; /* White text */
+}
+
+
+.toolbar h2 {
+  margin-top: 0;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.tools button {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #333; /* Dark buttons */
+  border: 1px solid #555;
+  border-radius: 4px;
+  text-align: center;
+  color: white; /* White text */
+}
+
+.tools button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.view-options {
+  margin-top: 20px;
+  color: white;
+}
+
+.view-options input {
+  margin-right: 8px;
+}
+
+.drawing-area-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.drawing-area {
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Black background */
+  cursor: crosshair;
+  position: relative;
+}
+
+.annotation {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for annotations */
+  color: white; /* White text */
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: nowrap;
+  border: 1px solid white; /* White border */
+}
+
+.shape-container {
+  position: absolute;
+}
